@@ -1,0 +1,667 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kusuma Mothku | React Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-ring" id="cursor-ring"></div>
+
+    <!-- Animated Background -->
+    <div class="bg-grid"></div>
+    <div class="orb orb1"></div>
+    <div class="orb orb2"></div>
+    <div class="orb orb3"></div>
+
+    <!-- ============================================================
+     NAVIGATION
+     ============================================================ -->
+    <nav id="navbar">
+      <div class="logo">KM</div>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- ============================================================
+     HERO
+     ============================================================ -->
+    <section class="hero" id="home">
+      <div class="hero-left">
+        <div class="hero-tag"><span></span>Open to Opportunities</div>
+        <h1>
+          <span class="name">Kusuma Mothku</span>
+          <span class="role">React · MERN Developer</span>
+        </h1>
+        <p class="hero-desc">
+          Building modern, scalable web experiences with React and the MERN
+          stack. I turn ideas into clean, impactful digital products — one
+          component at a time.
+        </p>
+        <div class="hero-btns">
+          <button class="btn-primary" onclick="scrollToProjects()">
+            View My Work →
+          </button>
+          <button class="btn-outline" onclick="scrollToContact()">
+            Get In Touch
+          </button>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num">2+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">10+</span>
+            <span class="stat-label">Technologies</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">MERN</span>
+            <span class="stat-label">Full Stack</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="photo-frame">
+          <div class="photo-inner">
+            <img
+              src="WhatsApp Image 2026-03-23 at 1.40.25 PM.jpeg"
+              style="
+                width: 50%;
+                height: 50%;
+                object-fit: cover;
+                border-radius: 19px;
+              "
+            />
+            <div class="photo-name">Kusuma Mothku</div>
+            <div class="photo-title">Software Developer</div>
+            <div class="photo-badge">📍 Hyderabad, India</div>
+          </div>
+        </div>
+        <div class="deco-card deco-card1">
+          <div class="deco-icon">⚛️</div>
+          <div class="deco-txt">Primary Stack</div>
+          <div class="deco-val">React.js</div>
+        </div>
+        <div class="deco-card deco-card2">
+          <div class="deco-icon">🌐</div>
+          <div class="deco-txt">Backend</div>
+          <div class="deco-val">Node + Express</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+     ABOUT
+     ============================================================ -->
+    <section id="about">
+      <div class="section-inner">
+        <div class="section-label">01 — About Me</div>
+        <div class="section-title">
+          Turning ideas into <span>real products</span>
+        </div>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              I'm a <strong>React-focused Software Developer</strong> with
+              practical, hands-on experience building modern, scalable web
+              applications using the MERN stack. I specialize in crafting
+              intuitive, responsive user interfaces and integrating robust
+              backend services.
+            </p>
+            <p>
+              I've worked across both
+              <strong>product and consulting environments</strong> — from
+              educational platforms at TutorialsPoint to full-stack internal
+              tools at Cust Q. I enjoy working close to the user, thinking
+              deeply about usability and design quality.
+            </p>
+            <p>
+              I hold an MBA in Systems from Osmania University, giving me a
+              <strong>business-aware engineering mindset</strong> that helps me
+              connect technical decisions to real-world goals.
+            </p>
+            <div class="about-info">
+              <div class="info-item">
+                <span class="info-key">Location</span>
+                <span class="info-val">Hyderabad, India</span>
+              </div>
+              <div class="info-item">
+                <span class="info-key">Email</span>
+                <span class="info-val"
+                  ><a href="mailto:kusumadimpul07@gmail.com"
+                    >kusumadimpul07@gmail.com</a
+                  ></span
+                >
+              </div>
+              <div class="info-item">
+                <span class="info-key">LinkedIn</span>
+                <span class="info-val"
+                  ><a
+                    href="https://www.linkedin.com/in/kusuma-mothku-102423256"
+                    target="_blank"
+                    >kusuma-mothku</a
+                  ></span
+                >
+              </div>
+              <div class="info-item">
+                <span class="info-key">Portfolio</span>
+                <span class="info-val"
+                  ><a href="https://kusuma-dev.netlify.app" target="_blank"
+                    >kusuma-dev.netlify.app</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="about-cards">
+            <div class="about-card reveal reveal-delay-1">
+              <div class="about-card-icon">⚡</div>
+              <h4>Fast Learner</h4>
+              <p>
+                Ability to rapidly pick up new technologies and frameworks,
+                adapting to changing project requirements with ease.
+              </p>
+            </div>
+            <div class="about-card reveal reveal-delay-2">
+              <div class="about-card-icon">🤝</div>
+              <h4>Team-Oriented</h4>
+              <p>
+                Experienced working in cross-functional teams — communicating
+                clearly and collaborating effectively across roles.
+              </p>
+            </div>
+            <div class="about-card reveal reveal-delay-3">
+              <div class="about-card-icon">🎯</div>
+              <h4>Detail-Focused</h4>
+              <p>
+                Committed to clean, maintainable code and polished user
+                experiences. Quality over quantity, always.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+     SKILLS
+     ============================================================ -->
+    <section id="skills">
+      <div class="section-inner">
+        <div class="section-label">02 — Tech Stack</div>
+        <div class="section-title">What I <span>build with</span></div>
+        <div class="skills-grid">
+          <div class="skill-cat highlight reveal">
+            <div class="skill-cat-icon">⚛️</div>
+            <h3>Frontend</h3>
+            <div class="skill-pills">
+              <span class="pill">React.js</span>
+              <span class="pill">JavaScript ES6+</span>
+              <span class="pill">HTML5</span>
+              <span class="pill">CSS3</span>
+              <span class="pill">Responsive UI</span>
+              <span class="pill">Component Design</span>
+            </div>
+          </div>
+          <div class="skill-cat reveal reveal-delay-1">
+            <div class="skill-cat-icon">🖥️</div>
+            <h3>Backend</h3>
+            <div class="skill-pills">
+              <span class="pill">Node.js</span>
+              <span class="pill">Express.js</span>
+              <span class="pill">REST APIs</span>
+              <span class="pill">API Integration</span>
+              <span class="pill">python programming</span>
+            </div>
+          </div>
+          <div class="skill-cat reveal reveal-delay-2">
+            <div class="skill-cat-icon">🗄️</div>
+            <h3>Database & Tools</h3>
+            <div class="skill-pills">
+              <span class="pill">MongoDB</span>
+              <span class="pill">Data Modeling</span>
+              <span class="pill">Git & GitHub</span>
+              <span class="pill">Postman</span>
+              <span class="pill">VS Code</span>
+              <span class="pill">MongoDB Compass</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+     EXPERIENCE
+     ============================================================ -->
+    <section id="experience">
+      <div class="section-inner">
+        <div class="section-label">03 — Work History</div>
+        <div class="section-title">Professional <span>Experience</span></div>
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-dot active"></div>
+            <div class="timeline-period">Oct 2024 – May 2025</div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div class="timeline-title">Software Developer</div>
+                <div class="timeline-badge">Most Recent</div>
+              </div>
+              <div class="timeline-company">
+                <span></span>Cust Q Software Services — Hyderabad
+              </div>
+              <ul class="timeline-list">
+                <li>
+                  Developed scalable web applications using the full MERN stack
+                  (MongoDB, Express.js, React.js, Node.js)
+                </li>
+                <li>
+                  Built reusable and responsive React components for modern,
+                  production-ready user interfaces
+                </li>
+                <li>
+                  Developed RESTful APIs using Node.js and Express.js to power
+                  application functionality
+                </li>
+                <li>
+                  Integrated MongoDB databases and managed backend data
+                  operations and modeling
+                </li>
+                <li>
+                  Participated in a full MERN project for internal applications,
+                  contributing across all layers
+                </li>
+                <li>
+                  Collaborated with cross-functional teams to develop, test, and
+                  deploy web features efficiently
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal reveal-delay-1">
+            <div class="timeline-dot"></div>
+            <div class="timeline-period">April – December 2022</div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div class="timeline-title">Associate Software Engineer</div>
+                <div class="timeline-badge">Frontend Focus</div>
+              </div>
+              <div class="timeline-company">
+                <span></span>TutorialsPoint — Hyderabad
+              </div>
+              <ul class="timeline-list">
+                <li>
+                  Worked on frontend development and maintenance of educational
+                  web applications
+                </li>
+                <li>
+                  Developed and improved UI components using HTML, CSS, and
+                  JavaScript
+                </li>
+                <li>
+                  Assisted in maintaining and updating existing learning
+                  platform features
+                </li>
+                <li>
+                  Fixed UI issues and improved cross-browser and cross-device
+                  usability
+                </li>
+                <li>
+                  Supported the development team in debugging, testing, and
+                  improving platform stability
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+     PROJECTS
+     ============================================================ -->
+    <section id="projects">
+      <div class="section-inner">
+        <div class="section-label">04 — Projects</div>
+        <div class="section-title">Things I've <span>built</span></div>
+        <div class="projects-grid">
+          <div class="project-card project-featured reveal">
+            <div class="featured-badge">⭐ Featured Project</div>
+            <div class="project-num">01</div>
+            <div class="project-title">School Management System</div>
+            <p class="project-desc">
+              A comprehensive MERN stack application featuring role-based
+              authentication (admin, teacher, student), an admin dashboard for
+              managing users and records, and a clean, responsive UI. Built with
+              secure JWT auth and real-time data handling.
+            </p>
+            <div class="project-stack">
+              <span class="stack-tag">React.js</span>
+              <span class="stack-tag">Node.js</span>
+              <span class="stack-tag">Express.js</span>
+              <span class="stack-tag">MongoDB</span>
+              <span class="stack-tag">JWT Auth</span>
+              <span class="stack-tag">REST API</span>
+            </div>
+            <div class="project-links">
+              <!-- <a class="project-link" href="https://kusuma-dev.netlify.app" target="_blank">🔗 Live Demo →</a>
+          <a class="project-link" href="https://github.com" target="_blank">⌨️ Source Code →</a> -->
+            </div>
+          </div>
+
+          <div class="project-card reveal reveal-delay-1">
+            <div class="project-num">02</div>
+            <div class="project-title">Learning Platform Enhancement</div>
+            <p class="project-desc">
+              Significantly improved UI performance and built new feature
+              modules for TutorialsPoint's educational platform. Enhanced
+              cross-browser consistency, debugged complex layout issues, and
+              added reusable component libraries.
+            </p>
+            <div class="project-stack">
+              <span class="stack-tag">HTML5</span>
+              <span class="stack-tag">CSS3</span>
+              <span class="stack-tag">JavaScript</span>
+              <span class="stack-tag">UI Testing</span>
+            </div>
+            <!-- <div class="project-links">
+          <a class="project-link" href="https://www.tutorialspoint.com" target="_blank">🔗 View Platform →</a>
+        </div> -->
+          </div>
+
+          <div class="project-card reveal reveal-delay-2">
+            <div class="project-num">03</div>
+            <div class="project-title">MERN Internal Tool</div>
+            <p class="project-desc">
+              Developed a full-stack internal web application for Cust Q as part
+              of a collaborative team. Contributed to both the React frontend
+              and Node.js backend, implementing RESTful endpoints and database
+              integrations.
+            </p>
+            <div class="project-stack">
+              <span class="stack-tag">MERN Stack</span>
+              <span class="stack-tag">REST API</span>
+              <span class="stack-tag">MongoDB</span>
+              <span class="stack-tag">Git</span>
+            </div>
+            <!-- <div class="project-links">
+          <a class="project-link" href="https://kusuma-dev.netlify.app" target="_blank">🔗 Portfolio →</a>
+        </div> -->
+          </div>
+
+          <div class="project-card project-featured reveal">
+            <div class="featured-badge">🏢 Startup Project</div>
+            <div class="project-num">04</div>
+            <div class="project-title">Company Self-Portal</div>
+            <p class="project-desc">
+              Designed and developed a complete company portal for my own
+              startup — a self-serve internal platform featuring team
+              management, employee profiles, department dashboards, and
+              announcement boards. Built end-to-end as the sole developer, from
+              architecture to deployment.
+            </p>
+            <div class="project-stack">
+              <span class="stack-tag">React.js</span>
+              <span class="stack-tag">Node.js</span>
+              <span class="stack-tag">Express.js</span>
+              <span class="stack-tag">MongoDB</span>
+              <span class="stack-tag">Team Management</span>
+              <span class="stack-tag">Dashboard UI</span>
+              <span class="stack-tag">JWT Auth</span>
+            </div>
+            <!-- <div class="project-links">
+          <a class="project-link" href="https://kusuma-dev.netlify.app" target="_blank">🔗 Live Demo →</a>
+          <a class="project-link" href="https://github.com" target="_blank">⌨️ Source Code →</a>
+        </div> -->
+          </div>
+
+          <div class="project-card reveal reveal-delay-1">
+            <div class="project-num">05</div>
+            <div class="project-title">Boutique Management System</div>
+            <p class="project-desc">
+              A personal project — a full-featured boutique management web app
+              to help small fashion businesses manage inventory, track orders,
+              handle customer records, and monitor sales. Features a clean admin
+              panel with product catalogue management, order status tracking,
+              and billing summaries.
+            </p>
+            <div class="project-stack">
+              <span class="stack-tag">React.js</span>
+              <span class="stack-tag">Node.js</span>
+              <span class="stack-tag">MongoDB</span>
+              <span class="stack-tag">Inventory</span>
+              <span class="stack-tag">Order Tracking</span>
+              <span class="stack-tag">Admin Panel</span>
+            </div>
+            <!-- <div class="project-links">
+          <a class="project-link" href="https://kusuma-dev.netlify.app" target="_blank">🔗 Live Demo →</a>
+          <a class="project-link" href="https://github.com" target="_blank">⌨️ Source Code →</a>
+        </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+     BLOG
+     ============================================================ -->
+    <section id="blog">
+      <div class="section-inner">
+        <div class="section-label">05 — Articles</div>
+        <div class="section-title">Thoughts &amp; <span>Writings</span></div>
+        <div class="blog-grid">
+          <div
+            class="blog-card blog-featured reveal"
+            onclick="openArticle('a1')"
+          >
+            <div class="blog-meta">
+              <span class="blog-tag">React</span>
+              <span class="blog-date">March 2025</span>
+            </div>
+            <h3 class="blog-title">
+              How I Built a Full MERN App from Scratch — and What I Learned
+            </h3>
+            <p class="blog-excerpt">
+              From setting up MongoDB Atlas to deploying on Netlify, here's an
+              honest breakdown of the challenges, mistakes, and breakthroughs I
+              experienced building my first complete MERN stack application.
+            </p>
+            <div class="blog-read">Read Article <span>→</span></div>
+          </div>
+
+          <div
+            class="blog-card reveal reveal-delay-1"
+            onclick="openArticle('a2')"
+          >
+            <div class="blog-meta">
+              <span class="blog-tag">JavaScript</span>
+              <span class="blog-date">January 2025</span>
+            </div>
+            <h3 class="blog-title">
+              React Components the Right Way: Reusability Patterns I Use Daily
+            </h3>
+            <p class="blog-excerpt">
+              Clean, reusable components are the backbone of any good React
+              codebase. Here are the patterns I've picked up that actually work
+              in real projects.
+            </p>
+            <div class="blog-read">Read Article <span>→</span></div>
+          </div>
+
+          <div
+            class="blog-card reveal reveal-delay-2"
+            onclick="openArticle('a3')"
+          >
+            <div class="blog-meta">
+              <span class="blog-tag">Career</span>
+              <span class="blog-date">November 2024</span>
+            </div>
+            <h3 class="blog-title">
+              From MBA to Developer: My Unconventional Path into Tech
+            </h3>
+            <p class="blog-excerpt">
+              Most developers come from CS backgrounds. I studied Systems
+              Management. Here's how that gave me a completely different — and
+              surprisingly useful — perspective on software development.
+            </p>
+            <div class="blog-read">Read Article <span>→</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Article Modal -->
+    <div class="modal-overlay" id="modal-overlay" onclick="closeArticle()">
+      <div class="modal" onclick="event.stopPropagation()">
+        <button class="modal-close" onclick="closeArticle()">✕</button>
+        <div class="modal-content" id="modal-content"></div>
+      </div>
+    </div>
+
+    <!-- ============================================================
+     CONTACT
+     ============================================================ -->
+    <section id="contact">
+      <div class="section-inner">
+        <div class="section-label">06 — Let's Talk</div>
+        <div class="section-title">Get in <span>touch</span></div>
+        <div class="contact-grid">
+          <div class="contact-left reveal">
+            <p>
+              I'm currently open to new opportunities — whether it's a full-time
+              role, freelance project, or just a conversation. Feel free to
+              reach out through any of these channels.
+            </p>
+            <div class="contact-links">
+              <a href="mailto:kusumadimpul07@gmail.com" class="contact-link">
+                <span class="contact-link-icon">📧</span>
+                <div>
+                  <div class="contact-link-label">Email</div>
+                  <div class="contact-link-val">kusumadimpul07@gmail.com</div>
+                </div>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/kusuma-mothku-102423256"
+                target="_blank"
+                class="contact-link"
+              >
+                <span class="contact-link-icon">💼</span>
+                <div>
+                  <div class="contact-link-label">LinkedIn</div>
+                  <div class="contact-link-val">
+                    linkedin.com/in/kusuma-mothku
+                  </div>
+                </div>
+              </a>
+              <a href="tel:+919603605680" class="contact-link">
+                <span class="contact-link-icon">📱</span>
+                <div>
+                  <div class="contact-link-label">Phone</div>
+                  <div class="contact-link-val">+91 9603605680</div>
+                </div>
+              </a>
+              <a
+                href="https://github.com/kusumadimpul07-lgtm"
+                target="_blank"
+                class="contact-link"
+              >
+                <span class="contact-link-icon">🌐</span>
+                <div>
+                  <div class="contact-link-label">Git</div>
+                  <div class="contact-link-val">
+                    github.com/kusumadimpul07-lgtm
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-form reveal reveal-delay-1">
+            <h3>Send a message</h3>
+            <div class="form-group">
+              <label>Your Name</label>
+              <input
+                type="text"
+                id="contact-name"
+                placeholder="e.g. Priya Sharma"
+              />
+            </div>
+            <div class="form-group">
+              <label>Your Email</label>
+              <input
+                type="email"
+                id="contact-email"
+                placeholder="e.g. priya@company.com"
+              />
+            </div>
+            <div class="form-group">
+              <label>Message</label>
+              <textarea
+                id="contact-message"
+                placeholder="Tell me about the opportunity or project…"
+              ></textarea>
+            </div>
+            <button class="form-submit" onclick="handleFormSubmit(this)">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                style="vertical-align: middle; margin-right: 8px"
+              >
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"
+                />
+                <path
+                  d="M12 0C5.373 0 0 5.373 0 12c0 2.125.554 4.122 1.527 5.855L0 24l6.335-1.51A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.885 0-3.651-.502-5.176-1.379l-.371-.214-3.762.897.944-3.668-.235-.387A9.953 9.953 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"
+                />
+              </svg>
+              Send via WhatsApp
+            </button>
+            <p
+              style="
+                font-size: 12px;
+                color: var(--muted);
+                margin-top: 14px;
+                text-align: center;
+                line-height: 1.6;
+              "
+            >
+              Clicking the button will open WhatsApp with your message
+              pre-filled.<br />Just hit send! 💬
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+     FOOTER
+     ============================================================ -->
+    <footer>
+      <p>
+        Designed &amp; built by <span>Kusuma Mothku</span> · React Developer ·
+        Hyderabad 🇮🇳
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

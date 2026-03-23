@@ -3,6 +3,18 @@
    script.js
    ============================================ */
 
+/* ---- HAMBURGER MENU ---- */
+function toggleMenu() {
+  const nav  = document.getElementById('nav-links');
+  const btn  = document.getElementById('hamburger');
+  nav.classList.toggle('open');
+  btn.classList.toggle('open');
+}
+function closeMenu() {
+  document.getElementById('nav-links').classList.remove('open');
+  document.getElementById('hamburger').classList.remove('open');
+}
+
 /* ---- CUSTOM CURSOR ---- */
 const cursor = document.getElementById('cursor');
 const ring = document.getElementById('cursor-ring');
@@ -216,116 +228,3 @@ function closeArticle() {
 document.addEventListener('keydown', e => {
   if (e.key === 'Escape') closeArticle();
 });
-// console.log("start");
-// setTimeout(() => {
-//   console.log("Inside setTimeout");
-// }, 5000);
-// console.log("END");
-
-// function fetchData(callback) {
-//   setTimeout(() => {
-//     callback("manasvi and manvitha");
-//   }, 1000);
-// }
-// fetchData((data) => {
-//   console.log(data);
-// });
-
-// callback hell
-// setTimeout(() => {
-//   console.log("step 1");
-//   setTimeout(() => {
-//     console.log("step 2");
-//     setTimeout(() => {
-//       console.log("step 3");
-//     }, 1000);
-//   }, 1000);
-// }, 1000);
-
-// //promises
-// const myPromise = new Promise((resolve, reject) => {
-//   setTimeout(() => {
-//     //resolve("success");
-//     reject("fail")
-//   }, 1000);
-// });
-// myPromise
-// .then((res) => console.log(res));
-
-// myPromise.catch((err) => console.log(err));
-
-//async, await
-// const fetchData = () => {
-//   return new Promise((resolve) => {
-//     setTimeout(() => {
-//       resolve("success");
-//     }, 1000);
-//   });
-// };
-
-// const getData = async () => {
-//   const data = await fetchData();
-//   console.log(data);
-// };
-// getData();
-
-// const getUser = async () => {
-//   return new Promise((resolve) => {
-//     setTimeout(() => {
-//       resolve({ name: "kusuma", age: 22 });
-//     }, 1000);
-//   });
-// };
-
-// const main = async () => {
-//   const user = await getUser();
-//   console.log( user.name);
-// };
-// main();
-
-// const getNumber = () => {
-//   return new Promise((resolve) => {
-//     setTimeout(() => {
-//       resolve(10);
-//     }, 1000);
-//   });
-// };
-
-// const result = async () => {
-//   const num = await getNumber();
-//   console.log(num *2);
-// };
-// result();
-
-// const getNumber = () => {
-//   return new Promise((resolve) => {
-//     setTimeout(() => {
-//       resolve({ name: "kusuma", age: 22 });
-//     }, 1000);
-//   });
-// };
-// const getData = async () => {
-//   const data = await getNumber();
-//   console.log(data.age * 2);
-// };
-// getData();
-
-// async function getUserData() {
-//   const data = "kim";
-//   return { name: data, age: 22 };
-// }
-// const main=async  ()=>{
-// const result = await getUserData();
-// console.log(result);
-// }
-// main()
-
-// function getObjectPromise() {
-//   return new Promise((resolve) => {
-//     const data = "kim";
-//     resolve({ name: data, age: 22 });
-//   });
-// }
-// getObjectPromise().then((result) => {
-//   console.log(result);
-// });

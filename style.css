@@ -25,7 +25,7 @@ body {
   color: var(--text);
   font-family: 'DM Sans', sans-serif;
   overflow-x: hidden;
-  cursor: none;
+  cursor: default;
 }
 
 /* ---- CUSTOM CURSOR ---- */
@@ -40,6 +40,7 @@ body {
   transition: transform 0.1s, width 0.2s, height 0.2s, opacity 0.2s;
   mix-blend-mode: difference;
 }
+
 .cursor-ring {
   width: 36px; height: 36px;
   border: 1.5px solid var(--accent);
@@ -49,7 +50,6 @@ body {
   z-index: 9998;
   transform: translate(-50%, -50%);
   transition: transform 0.18s ease, width 0.2s, height 0.2s, opacity 0.2s;
-  opacity: 0.5;
 }
 
 /* ---- BACKGROUND GRID ---- */
@@ -166,7 +166,7 @@ nav ul a:hover::after { width: 100%; }
 .btn-primary {
   padding: 14px 32px; background: var(--accent); color: var(--bg);
   border: none; border-radius: 6px; font-weight: 600; font-size: 14px;
-  cursor: none; letter-spacing: 0.5px; transition: all 0.3s;
+  cursor: default; letter-spacing: 0.5px; transition: all 0.3s;
   box-shadow: 0 0 30px rgba(100,255,218,0.3);
 }
 .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 8px 40px rgba(100,255,218,0.4); }
@@ -174,7 +174,7 @@ nav ul a:hover::after { width: 100%; }
   padding: 14px 32px; background: transparent;
   border: 1px solid var(--border); border-radius: 6px;
   color: var(--text); font-weight: 500; font-size: 14px;
-  cursor: none; letter-spacing: 0.5px; transition: all 0.3s;
+  cursor: default; letter-spacing: 0.5px; transition: all 0.3s;
 }
 .btn-outline:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-3px); }
 .hero-stats { display: flex; gap: 40px; margin-top: 52px; animation: fadeUp 0.8s ease 0.4s both; }

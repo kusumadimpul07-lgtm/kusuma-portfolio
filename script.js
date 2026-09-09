@@ -16,42 +16,7 @@ function closeMenu() {
 }
 
 /* ---- CUSTOM CURSOR ---- */
-const cursor = document.getElementById('cursor');
-const ring = document.getElementById('cursor-ring');
-let rx = 0, ry = 0;
 
-document.addEventListener('mousemove', e => {
-  cursor.style.left = e.clientX + 'px';
-  cursor.style.top  = e.clientY + 'px';
-});
-
-function animRing() {
-  rx += (parseFloat(cursor.style.left || 0) - rx) * 0.12;
-  ry += (parseFloat(cursor.style.top  || 0) - ry) * 0.12;
-  ring.style.left = rx + 'px';
-  ring.style.top  = ry + 'px';
-  requestAnimationFrame(animRing);
-}
-animRing();
-
-/* Scale cursor on interactive elements */
-const interactiveEls = 'a, button, .project-card, .about-card, .skill-cat, .contact-link, .blog-card, .modal-close';
-document.querySelectorAll(interactiveEls).forEach(el => {
-  el.addEventListener('mouseenter', () => {
-    cursor.style.width   = '20px';
-    cursor.style.height  = '20px';
-    cursor.style.opacity = '0.5';
-    ring.style.width     = '56px';
-    ring.style.height    = '56px';
-  });
-  el.addEventListener('mouseleave', () => {
-    cursor.style.width   = '12px';
-    cursor.style.height  = '12px';
-    cursor.style.opacity = '1';
-    ring.style.width     = '36px';
-    ring.style.height    = '36px';
-  });
-});
 
 /* ---- SCROLL REVEAL ---- */
 const reveals = document.querySelectorAll('.reveal');

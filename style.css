@@ -62,9 +62,9 @@ button, input, textarea { font: inherit; }
 }
 .wordmark {
   color: var(--text);
-  font: 800 27px/1 var(--font-display);
+  font: 800 21px/1 var(--font-display);
   text-decoration: none;
-  letter-spacing: -.08em;
+  letter-spacing: -.055em;
 }
 .wordmark span { color: var(--accent); }
 .nav-links {
@@ -236,18 +236,65 @@ h1, h2, h3, p { margin-top: 0; }
 .experience-list { border-top: 1px solid var(--line); }
 .experience-item {
   display: grid;
-  grid-template-columns: 190px 1fr 180px;
+  grid-template-columns: 170px minmax(0, 1fr);
   gap: 28px;
   align-items: start;
-  padding: 26px 0;
+  padding: 30px 0;
   border-bottom: 1px solid var(--line);
 }
-.experience-date { color: var(--muted); font: 11px/1.8 var(--font-display); }
+.experience-date {
+  position: relative;
+  display: grid;
+  gap: 3px;
+  padding: 3px 0 3px 20px;
+  color: var(--muted);
+  font: 600 11px/1.7 var(--font-display);
+}
+.experience-date::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 5px;
+  width: 1px;
+  background: #455347;
+  content: "";
+}
+.experience-date::after {
+  position: absolute;
+  top: 7px;
+  left: 1px;
+  width: 9px;
+  height: 9px;
+  border: 2px solid var(--accent);
+  border-radius: 50%;
+  background: var(--bg-soft);
+  content: "";
+}
+.experience-date span { color: var(--quiet); font-size: 10px; }
 .experience-detail h3 { margin: 0 0 6px; font: 700 19px var(--font-display); letter-spacing: -.03em; }
 .experience-company { margin: 0; color: var(--accent); font-size: 12px; }
 .experience-company span { padding-inline: 5px; color: var(--quiet); }
-.experience-summary { margin: 3px 0 0; color: var(--muted); font-size: 12px; }
-.experience-note { margin: 17px 0 0; color: var(--quiet); font-size: 11px; }
+.experience-highlights {
+  display: grid;
+  gap: 9px;
+  margin: 17px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.experience-highlights li {
+  position: relative;
+  padding-left: 17px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.75;
+}
+.experience-highlights li::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: var(--accent);
+  content: "↗";
+}
 .section-projects { background: var(--bg); }
 .project {
   display: grid;
@@ -464,8 +511,7 @@ h1, h2, h3, p { margin-top: 0; }
   .hero h1 { font-size: clamp(40px, 7vw, 61px); }
   .hero-portrait { width: min(100%, 190px); }
   .about-content { grid-template-columns: 1fr .75fr; gap: 36px; }
-  .experience-item { grid-template-columns: 145px 1fr; gap: 16px; }
-  .experience-summary { grid-column: 2; margin-top: -9px; }
+  .experience-item { grid-template-columns: 125px minmax(0, 1fr); gap: 18px; }
   .project { grid-template-columns: .8fr 1.2fr; }
   .project-visual { width: calc(100% - 40px); height: 240px; min-height: 0; margin: 20px; padding: 24px; }
   .education-layout { grid-template-columns: 1fr 1.2fr; gap: 34px; }
@@ -495,10 +541,10 @@ h1, h2, h3, p { margin-top: 0; }
   .skill-group h3 { min-height: 42px; margin: 13px 0 10px; font-size: 13px; }
   .skill-list li { padding: 5px 7px; font-size: 9px; }
   .skill-caption { font-size: 10px; }
-  .experience-item { grid-template-columns: 1fr; gap: 9px; padding: 21px 0; }
-  .experience-date br { display: none; }
-  .experience-summary { grid-column: auto; margin: 0; }
-  .experience-date { font-size: 10px; }
+  .experience-item { grid-template-columns: 1fr; gap: 14px; padding: 23px 0; }
+  .experience-date { grid-template-columns: auto auto auto; justify-content: start; align-items: center; gap: 7px; }
+  .experience-date::before { right: 0; bottom: auto; width: auto; height: 1px; }
+  .experience-date::after { top: 4px; }
   .experience-detail h3 { font-size: 17px; }
   .project { grid-template-columns: 1fr; }
   .project-visual { width: auto; height: 220px; min-height: 0; margin: 0; }
